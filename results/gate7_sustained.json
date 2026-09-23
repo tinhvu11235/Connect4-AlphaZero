@@ -1,0 +1,2352 @@
+{
+  "timestamp": "2026-09-23T07:12:30.969268+07:00",
+  "system": {
+    "platform": "Windows-10-10.0.19045-SP0",
+    "logical_cpu_count": 20,
+    "physical_cpu_count": 14,
+    "system_ram_gb": 31.747482299804688,
+    "torch_version": "2.11.0+cu128",
+    "cuda_version": "12.8",
+    "gpu": "NVIDIA GeForce RTX 5060",
+    "torch_num_threads": 14,
+    "torch_num_interop_threads": 14
+  },
+  "configuration": {
+    "duration_target_seconds": 180.0,
+    "workers": 8,
+    "inference_batch_size": 2,
+    "games_per_batch": 20,
+    "opponent_rollouts": 100,
+    "pin_memory": true,
+    "amp": false,
+    "training_dtype": "float32"
+  },
+  "totals": {
+    "elapsed_seconds": 180.97264780000842,
+    "batches": 286,
+    "games": 5720,
+    "policy_positions": 50956,
+    "optimizer_updates": 286,
+    "games_per_second": 31.606986301715224,
+    "positions_per_second": 281.5674115367484,
+    "training_steps_per_second": 281.5674115367484,
+    "inference_requests": 96105,
+    "inference_batches": 59883,
+    "average_inference_batch_size": 1.604879515054356,
+    "maximum_inference_batch_size": 2
+  },
+  "stability": {
+    "completed_without_deadlock": true,
+    "first_third_games_per_second": 31.368194522999314,
+    "middle_third_games_per_second": 32.025321575399126,
+    "last_third_games_per_second": 33.37524787489944,
+    "maximum_batch_seconds": 2.5249704999878304,
+    "gpu_idle_sample_percent": 2.2099447513812156,
+    "vram_growth_mb": 104.0,
+    "ram_growth_gb": 3.6244964599609375,
+    "steady_state_vram_growth_mb": 20.0,
+    "steady_state_ram_growth_gb": -0.00554656982421875,
+    "parameter_change_l2": 5.230616092681885,
+    "first_loss": -225.34478759765625,
+    "last_loss": -126.22929382324219
+  },
+  "monitor": {
+    "samples": 181,
+    "interval_seconds": 1.0,
+    "average_gpu_util_percent": 2.74585635359116,
+    "peak_vram_mb": 257.0,
+    "average_cpu_percent": 31.162983425414364,
+    "peak_ram_used_gb": 14.343963623046875
+  },
+  "cuda_peak_allocated_mb": 72.6318359375,
+  "batch_records": [
+    {
+      "batch": 1,
+      "side": "red",
+      "elapsed_seconds": 2.5249704999878304,
+      "games_per_second": 7.920884620274333,
+      "positions_per_second": 68.51565196537298,
+      "loss": -225.34478759765625
+    },
+    {
+      "batch": 2,
+      "side": "yellow",
+      "elapsed_seconds": 0.6588240999990376,
+      "games_per_second": 30.35711656575589,
+      "positions_per_second": 217.05338344515462,
+      "loss": -174.25546264648438
+    },
+    {
+      "batch": 3,
+      "side": "red",
+      "elapsed_seconds": 0.6482929000048898,
+      "games_per_second": 30.850253025830064,
+      "positions_per_second": 279.1947898837621,
+      "loss": -286.9635009765625
+    },
+    {
+      "batch": 4,
+      "side": "yellow",
+      "elapsed_seconds": 0.6573331000108737,
+      "games_per_second": 30.425974288635633,
+      "positions_per_second": 225.15220973590368,
+      "loss": -205.9266357421875
+    },
+    {
+      "batch": 5,
+      "side": "red",
+      "elapsed_seconds": 0.5830665000103181,
+      "games_per_second": 34.301404727670125,
+      "positions_per_second": 293.2770104215796,
+      "loss": -219.45703125
+    },
+    {
+      "batch": 6,
+      "side": "yellow",
+      "elapsed_seconds": 0.6034843000088586,
+      "games_per_second": 33.140878726598885,
+      "positions_per_second": 256.84181013114136,
+      "loss": -221.6619415283203
+    },
+    {
+      "batch": 7,
+      "side": "red",
+      "elapsed_seconds": 0.765353300012066,
+      "games_per_second": 26.131722434181302,
+      "positions_per_second": 263.93039658523116,
+      "loss": -225.42300415039062
+    },
+    {
+      "batch": 8,
+      "side": "yellow",
+      "elapsed_seconds": 0.7281536999944365,
+      "games_per_second": 27.46672852194916,
+      "positions_per_second": 232.0938560104704,
+      "loss": -233.87977600097656
+    },
+    {
+      "batch": 9,
+      "side": "red",
+      "elapsed_seconds": 0.642155499997898,
+      "games_per_second": 31.145104262231605,
+      "positions_per_second": 277.1914279338613,
+      "loss": -230.84617614746094
+    },
+    {
+      "batch": 10,
+      "side": "yellow",
+      "elapsed_seconds": 0.6965454000019236,
+      "games_per_second": 28.71313197954472,
+      "positions_per_second": 254.11121801897076,
+      "loss": -238.3525390625
+    },
+    {
+      "batch": 11,
+      "side": "red",
+      "elapsed_seconds": 0.6190570000035223,
+      "games_per_second": 32.30720272912867,
+      "positions_per_second": 305.3030657902659,
+      "loss": -280.3002624511719
+    },
+    {
+      "batch": 12,
+      "side": "yellow",
+      "elapsed_seconds": 0.6707060000044294,
+      "games_per_second": 29.819324711375653,
+      "positions_per_second": 217.68107039304226,
+      "loss": -237.46673583984375
+    },
+    {
+      "batch": 13,
+      "side": "red",
+      "elapsed_seconds": 0.66938300000038,
+      "games_per_second": 29.878261025434835,
+      "positions_per_second": 274.8800014340005,
+      "loss": -271.9149169921875
+    },
+    {
+      "batch": 14,
+      "side": "yellow",
+      "elapsed_seconds": 0.5866671000112547,
+      "games_per_second": 34.09088390948857,
+      "positions_per_second": 259.0907177121131,
+      "loss": -246.63970947265625
+    },
+    {
+      "batch": 15,
+      "side": "red",
+      "elapsed_seconds": 0.6900013999984367,
+      "games_per_second": 28.98544843538769,
+      "positions_per_second": 282.60812224502996,
+      "loss": -308.70892333984375
+    },
+    {
+      "batch": 16,
+      "side": "yellow",
+      "elapsed_seconds": 0.6642528000083985,
+      "games_per_second": 30.109018734655134,
+      "positions_per_second": 224.31218957318075,
+      "loss": -239.3785400390625
+    },
+    {
+      "batch": 17,
+      "side": "red",
+      "elapsed_seconds": 0.7203131999995094,
+      "games_per_second": 27.76569969842788,
+      "positions_per_second": 247.11472731600816,
+      "loss": -249.4005126953125
+    },
+    {
+      "batch": 18,
+      "side": "yellow",
+      "elapsed_seconds": 0.662742900007288,
+      "games_per_second": 30.177614878680806,
+      "positions_per_second": 212.7521848946997,
+      "loss": -195.54620361328125
+    },
+    {
+      "batch": 19,
+      "side": "red",
+      "elapsed_seconds": 0.6505746999901021,
+      "games_per_second": 30.742050067892713,
+      "positions_per_second": 282.82686062461295,
+      "loss": -241.5968780517578
+    },
+    {
+      "batch": 20,
+      "side": "yellow",
+      "elapsed_seconds": 0.6439648999948986,
+      "games_per_second": 31.057593356654124,
+      "positions_per_second": 225.16755183574242,
+      "loss": -220.99691772460938
+    },
+    {
+      "batch": 21,
+      "side": "red",
+      "elapsed_seconds": 0.6377282000030391,
+      "games_per_second": 31.36132289571747,
+      "positions_per_second": 249.32251702095388,
+      "loss": -252.99978637695312
+    },
+    {
+      "batch": 22,
+      "side": "yellow",
+      "elapsed_seconds": 0.5532125000027008,
+      "games_per_second": 36.152473054933424,
+      "positions_per_second": 242.22156946805396,
+      "loss": -219.19287109375
+    },
+    {
+      "batch": 23,
+      "side": "red",
+      "elapsed_seconds": 0.6007435000065016,
+      "games_per_second": 33.292078898537476,
+      "positions_per_second": 268.0012351332267,
+      "loss": -185.5353546142578
+    },
+    {
+      "batch": 24,
+      "side": "yellow",
+      "elapsed_seconds": 0.6150987000000896,
+      "games_per_second": 32.51510692511151,
+      "positions_per_second": 243.86330193833632,
+      "loss": -215.07098388671875
+    },
+    {
+      "batch": 25,
+      "side": "red",
+      "elapsed_seconds": 0.6916361000039615,
+      "games_per_second": 28.916940570171867,
+      "positions_per_second": 250.13153593198666,
+      "loss": -250.71583557128906
+    },
+    {
+      "batch": 26,
+      "side": "yellow",
+      "elapsed_seconds": 0.6142977999988943,
+      "games_per_second": 32.55749898507857,
+      "positions_per_second": 234.4139926925657,
+      "loss": -236.99195861816406
+    },
+    {
+      "batch": 27,
+      "side": "red",
+      "elapsed_seconds": 0.5836858999973629,
+      "games_per_second": 34.26500451713903,
+      "positions_per_second": 280.9730370405401,
+      "loss": -232.9506378173828
+    },
+    {
+      "batch": 28,
+      "side": "yellow",
+      "elapsed_seconds": 0.6196824000071501,
+      "games_per_second": 32.27459743857375,
+      "positions_per_second": 256.5830496366613,
+      "loss": -256.2144775390625
+    },
+    {
+      "batch": 29,
+      "side": "red",
+      "elapsed_seconds": 0.6279419000056805,
+      "games_per_second": 31.85008039727732,
+      "positions_per_second": 261.170659257674,
+      "loss": -240.1826171875
+    },
+    {
+      "batch": 30,
+      "side": "yellow",
+      "elapsed_seconds": 0.6382406000047922,
+      "games_per_second": 31.33614502093698,
+      "positions_per_second": 242.8551239122616,
+      "loss": -201.29327392578125
+    },
+    {
+      "batch": 31,
+      "side": "red",
+      "elapsed_seconds": 0.597001399990404,
+      "games_per_second": 33.50075896023271,
+      "positions_per_second": 299.83179269408276,
+      "loss": -261.76458740234375
+    },
+    {
+      "batch": 32,
+      "side": "yellow",
+      "elapsed_seconds": 0.6623561000014888,
+      "games_per_second": 30.195237878771017,
+      "positions_per_second": 235.52285545441396,
+      "loss": -213.0664520263672
+    },
+    {
+      "batch": 33,
+      "side": "red",
+      "elapsed_seconds": 0.6025630999938585,
+      "games_per_second": 33.191544587120994,
+      "positions_per_second": 305.36221020151316,
+      "loss": -188.85104370117188
+    },
+    {
+      "batch": 34,
+      "side": "yellow",
+      "elapsed_seconds": 0.6485305999958655,
+      "games_per_second": 30.83894576466786,
+      "positions_per_second": 262.1310389996768,
+      "loss": -179.88168334960938
+    },
+    {
+      "batch": 35,
+      "side": "red",
+      "elapsed_seconds": 0.6035857000097167,
+      "games_per_second": 33.135311190570015,
+      "positions_per_second": 268.39602064361713,
+      "loss": -211.27804565429688
+    },
+    {
+      "batch": 36,
+      "side": "yellow",
+      "elapsed_seconds": 0.70640569999523,
+      "games_per_second": 28.312342326987242,
+      "positions_per_second": 243.48614401209028,
+      "loss": -274.42364501953125
+    },
+    {
+      "batch": 37,
+      "side": "red",
+      "elapsed_seconds": 0.6396985000028508,
+      "games_per_second": 31.264728618108172,
+      "positions_per_second": 259.49724753029784,
+      "loss": -241.16046142578125
+    },
+    {
+      "batch": 38,
+      "side": "yellow",
+      "elapsed_seconds": 0.5569161000021268,
+      "games_per_second": 35.91205210250453,
+      "positions_per_second": 240.61074908678034,
+      "loss": -218.82774353027344
+    },
+    {
+      "batch": 39,
+      "side": "red",
+      "elapsed_seconds": 0.5917903999943519,
+      "games_per_second": 33.79574930615786,
+      "positions_per_second": 278.81493177580234,
+      "loss": -222.89317321777344
+    },
+    {
+      "batch": 40,
+      "side": "yellow",
+      "elapsed_seconds": 0.8387887999997474,
+      "games_per_second": 23.843904448898247,
+      "positions_per_second": 226.51709226453335,
+      "loss": -233.8334197998047
+    },
+    {
+      "batch": 41,
+      "side": "red",
+      "elapsed_seconds": 0.6449940000020433,
+      "games_per_second": 31.008040384773565,
+      "positions_per_second": 269.76995134753,
+      "loss": -203.1622772216797
+    },
+    {
+      "batch": 42,
+      "side": "yellow",
+      "elapsed_seconds": 0.5867962000047555,
+      "games_per_second": 34.0833836344508,
+      "positions_per_second": 238.58368544115558,
+      "loss": -213.33815002441406
+    },
+    {
+      "batch": 43,
+      "side": "red",
+      "elapsed_seconds": 0.7236561000026995,
+      "games_per_second": 27.63743717482018,
+      "positions_per_second": 237.68195970345357,
+      "loss": -245.36788940429688
+    },
+    {
+      "batch": 44,
+      "side": "yellow",
+      "elapsed_seconds": 0.6152483000041684,
+      "games_per_second": 32.50720075108618,
+      "positions_per_second": 273.0604863091239,
+      "loss": -217.18821716308594
+    },
+    {
+      "batch": 45,
+      "side": "red",
+      "elapsed_seconds": 0.7478531999950064,
+      "games_per_second": 26.743216449610088,
+      "positions_per_second": 307.54698917051604,
+      "loss": -349.153564453125
+    },
+    {
+      "batch": 46,
+      "side": "yellow",
+      "elapsed_seconds": 0.6420915000053355,
+      "games_per_second": 31.148208627327737,
+      "positions_per_second": 272.5468254891177,
+      "loss": -259.287109375
+    },
+    {
+      "batch": 47,
+      "side": "red",
+      "elapsed_seconds": 0.5666507999994792,
+      "games_per_second": 35.29510591005674,
+      "positions_per_second": 273.53707080293975,
+      "loss": -226.85577392578125
+    },
+    {
+      "batch": 48,
+      "side": "yellow",
+      "elapsed_seconds": 0.5879962000035448,
+      "games_per_second": 34.01382525920989,
+      "positions_per_second": 215.98779039598278,
+      "loss": -200.36212158203125
+    },
+    {
+      "batch": 49,
+      "side": "red",
+      "elapsed_seconds": 0.6756361000007018,
+      "games_per_second": 29.6017338327233,
+      "positions_per_second": 266.4156044945097,
+      "loss": -247.552734375
+    },
+    {
+      "batch": 50,
+      "side": "yellow",
+      "elapsed_seconds": 0.5455415999895195,
+      "games_per_second": 36.66081560120113,
+      "positions_per_second": 234.6292198476872,
+      "loss": -174.02838134765625
+    },
+    {
+      "batch": 51,
+      "side": "red",
+      "elapsed_seconds": 0.5637145999935456,
+      "games_per_second": 35.47894626151069,
+      "positions_per_second": 283.83157009208554,
+      "loss": -210.12509155273438
+    },
+    {
+      "batch": 52,
+      "side": "yellow",
+      "elapsed_seconds": 0.6453241999988677,
+      "games_per_second": 30.992174166155696,
+      "positions_per_second": 261.88387170401563,
+      "loss": -269.09918212890625
+    },
+    {
+      "batch": 53,
+      "side": "red",
+      "elapsed_seconds": 0.6035591999971075,
+      "games_per_second": 33.136766037359465,
+      "positions_per_second": 291.60354112876325,
+      "loss": -259.7011413574219
+    },
+    {
+      "batch": 54,
+      "side": "yellow",
+      "elapsed_seconds": 0.6226842000032775,
+      "games_per_second": 32.119009924926196,
+      "positions_per_second": 228.044970466976,
+      "loss": -197.66197204589844
+    },
+    {
+      "batch": 55,
+      "side": "red",
+      "elapsed_seconds": 0.6071978999971179,
+      "games_per_second": 32.938190333159795,
+      "positions_per_second": 284.91534638183225,
+      "loss": -195.60906982421875
+    },
+    {
+      "batch": 56,
+      "side": "yellow",
+      "elapsed_seconds": 0.5716764999961015,
+      "games_per_second": 34.98482096104421,
+      "positions_per_second": 251.89071091951828,
+      "loss": -234.40203857421875
+    },
+    {
+      "batch": 57,
+      "side": "red",
+      "elapsed_seconds": 0.6669187000079546,
+      "games_per_second": 29.988662785676052,
+      "positions_per_second": 265.39966565323306,
+      "loss": -212.51016235351562
+    },
+    {
+      "batch": 58,
+      "side": "yellow",
+      "elapsed_seconds": 0.6108876000071177,
+      "games_per_second": 32.73924695765141,
+      "positions_per_second": 216.0790299204993,
+      "loss": -217.3352813720703
+    },
+    {
+      "batch": 59,
+      "side": "red",
+      "elapsed_seconds": 0.6163983000005828,
+      "games_per_second": 32.446552821416105,
+      "positions_per_second": 282.2850095463201,
+      "loss": -207.80819702148438
+    },
+    {
+      "batch": 60,
+      "side": "yellow",
+      "elapsed_seconds": 0.6246780000074068,
+      "games_per_second": 32.016494897791915,
+      "positions_per_second": 289.74927882501686,
+      "loss": -286.52178955078125
+    },
+    {
+      "batch": 61,
+      "side": "red",
+      "elapsed_seconds": 0.5585695000045234,
+      "games_per_second": 35.80575022416733,
+      "positions_per_second": 273.9139892148801,
+      "loss": -222.23516845703125
+    },
+    {
+      "batch": 62,
+      "side": "yellow",
+      "elapsed_seconds": 0.6049253000091994,
+      "games_per_second": 33.06193343160858,
+      "positions_per_second": 234.7397273644209,
+      "loss": -205.17660522460938
+    },
+    {
+      "batch": 63,
+      "side": "red",
+      "elapsed_seconds": 0.7025606999959564,
+      "games_per_second": 28.46729115379655,
+      "positions_per_second": 288.943005211035,
+      "loss": -239.84329223632812
+    },
+    {
+      "batch": 64,
+      "side": "yellow",
+      "elapsed_seconds": 0.6090226000087569,
+      "games_per_second": 32.83950382089668,
+      "positions_per_second": 244.65430346568024,
+      "loss": -240.5150909423828
+    },
+    {
+      "batch": 65,
+      "side": "red",
+      "elapsed_seconds": 0.7921567000012146,
+      "games_per_second": 25.24752993942907,
+      "positions_per_second": 300.44560627920595,
+      "loss": -202.23757934570312
+    },
+    {
+      "batch": 66,
+      "side": "yellow",
+      "elapsed_seconds": 0.5987063000065973,
+      "games_per_second": 33.40536085853717,
+      "positions_per_second": 247.1996703531751,
+      "loss": -128.0364532470703
+    },
+    {
+      "batch": 67,
+      "side": "red",
+      "elapsed_seconds": 0.6650311999983387,
+      "games_per_second": 30.073776989786285,
+      "positions_per_second": 261.6418598111407,
+      "loss": -273.58673095703125
+    },
+    {
+      "batch": 68,
+      "side": "yellow",
+      "elapsed_seconds": 0.5439760999870487,
+      "games_per_second": 36.76632116829429,
+      "positions_per_second": 268.39414452854834,
+      "loss": -229.921142578125
+    },
+    {
+      "batch": 69,
+      "side": "red",
+      "elapsed_seconds": 0.6338564000034239,
+      "games_per_second": 31.552888004115704,
+      "positions_per_second": 277.6654144362182,
+      "loss": -228.18923950195312
+    },
+    {
+      "batch": 70,
+      "side": "yellow",
+      "elapsed_seconds": 0.5885611999983666,
+      "games_per_second": 33.981173070966115,
+      "positions_per_second": 248.06256341805266,
+      "loss": -231.959228515625
+    },
+    {
+      "batch": 71,
+      "side": "red",
+      "elapsed_seconds": 0.5827874999959022,
+      "games_per_second": 34.31782596596637,
+      "positions_per_second": 277.97439032432766,
+      "loss": -264.56939697265625
+    },
+    {
+      "batch": 72,
+      "side": "yellow",
+      "elapsed_seconds": 0.4819458999991184,
+      "games_per_second": 41.49843374544027,
+      "positions_per_second": 230.31630728719352,
+      "loss": -156.0897216796875
+    },
+    {
+      "batch": 73,
+      "side": "red",
+      "elapsed_seconds": 0.7755791999952635,
+      "games_per_second": 25.787179439729872,
+      "positions_per_second": 302.999358416826,
+      "loss": -351.08935546875
+    },
+    {
+      "batch": 74,
+      "side": "yellow",
+      "elapsed_seconds": 0.6250498999870615,
+      "games_per_second": 31.99744532462768,
+      "positions_per_second": 275.17802979179805,
+      "loss": -242.35829162597656
+    },
+    {
+      "batch": 75,
+      "side": "red",
+      "elapsed_seconds": 0.6695901999919442,
+      "games_per_second": 29.86901540709619,
+      "positions_per_second": 232.97832017535026,
+      "loss": -195.4213104248047
+    },
+    {
+      "batch": 76,
+      "side": "yellow",
+      "elapsed_seconds": 0.7104030999907991,
+      "games_per_second": 28.153030301048847,
+      "positions_per_second": 223.81659089333832,
+      "loss": -245.31272888183594
+    },
+    {
+      "batch": 77,
+      "side": "red",
+      "elapsed_seconds": 0.6904428999987431,
+      "games_per_second": 28.96691384622307,
+      "positions_per_second": 275.1856815391191,
+      "loss": -199.33615112304688
+    },
+    {
+      "batch": 78,
+      "side": "yellow",
+      "elapsed_seconds": 0.6357933999970555,
+      "games_per_second": 31.45675938141639,
+      "positions_per_second": 268.95529271111013,
+      "loss": -248.01806640625
+    },
+    {
+      "batch": 79,
+      "side": "red",
+      "elapsed_seconds": 0.6608720999938669,
+      "games_per_second": 30.263041820324396,
+      "positions_per_second": 310.1961786583251,
+      "loss": -291.40142822265625
+    },
+    {
+      "batch": 80,
+      "side": "yellow",
+      "elapsed_seconds": 0.5869459999958053,
+      "games_per_second": 34.07468489459496,
+      "positions_per_second": 318.59830376446286,
+      "loss": -227.80865478515625
+    },
+    {
+      "batch": 81,
+      "side": "red",
+      "elapsed_seconds": 0.6301258000021335,
+      "games_per_second": 31.739693883240907,
+      "positions_per_second": 272.96136739587183,
+      "loss": -204.29022216796875
+    },
+    {
+      "batch": 82,
+      "side": "yellow",
+      "elapsed_seconds": 0.6160133000084898,
+      "games_per_second": 32.46683147867808,
+      "positions_per_second": 256.4879686815568,
+      "loss": -146.2566375732422
+    },
+    {
+      "batch": 83,
+      "side": "red",
+      "elapsed_seconds": 0.6389047999982722,
+      "games_per_second": 31.303568231220186,
+      "positions_per_second": 325.5571096046899,
+      "loss": -173.20968627929688
+    },
+    {
+      "batch": 84,
+      "side": "yellow",
+      "elapsed_seconds": 0.7151505000074394,
+      "games_per_second": 27.96614139232504,
+      "positions_per_second": 267.07665029670414,
+      "loss": -242.23114013671875
+    },
+    {
+      "batch": 85,
+      "side": "red",
+      "elapsed_seconds": 0.5642736000008881,
+      "games_per_second": 35.44379889466479,
+      "positions_per_second": 256.9675419863197,
+      "loss": -142.674072265625
+    },
+    {
+      "batch": 86,
+      "side": "yellow",
+      "elapsed_seconds": 0.548211999994237,
+      "games_per_second": 36.48223679928613,
+      "positions_per_second": 286.3855588743961,
+      "loss": -164.96380615234375
+    },
+    {
+      "batch": 87,
+      "side": "red",
+      "elapsed_seconds": 0.6202498000056949,
+      "games_per_second": 32.24507287195638,
+      "positions_per_second": 267.63410483723794,
+      "loss": -167.26133728027344
+    },
+    {
+      "batch": 88,
+      "side": "yellow",
+      "elapsed_seconds": 0.6619652999943355,
+      "games_per_second": 30.213064038509483,
+      "positions_per_second": 232.64059309652302,
+      "loss": -204.30191040039062
+    },
+    {
+      "batch": 89,
+      "side": "red",
+      "elapsed_seconds": 0.5914105999981984,
+      "games_per_second": 33.81745271400432,
+      "positions_per_second": 275.6122396191352,
+      "loss": -220.09384155273438
+    },
+    {
+      "batch": 90,
+      "side": "yellow",
+      "elapsed_seconds": 0.5627150000073016,
+      "games_per_second": 35.5419706241001,
+      "positions_per_second": 273.6731738055708,
+      "loss": -219.25680541992188
+    },
+    {
+      "batch": 91,
+      "side": "red",
+      "elapsed_seconds": 0.5895776999968803,
+      "games_per_second": 33.9225856067925,
+      "positions_per_second": 295.1264947790948,
+      "loss": -201.78533935546875
+    },
+    {
+      "batch": 92,
+      "side": "yellow",
+      "elapsed_seconds": 0.7211578999995254,
+      "games_per_second": 27.733177435916826,
+      "positions_per_second": 280.10509210275995,
+      "loss": -271.18341064453125
+    },
+    {
+      "batch": 93,
+      "side": "red",
+      "elapsed_seconds": 0.7226343000074849,
+      "games_per_second": 27.67651632339185,
+      "positions_per_second": 351.4917573070765,
+      "loss": -254.70033264160156
+    },
+    {
+      "batch": 94,
+      "side": "yellow",
+      "elapsed_seconds": 0.7405842000007397,
+      "games_per_second": 27.00570711605787,
+      "positions_per_second": 306.5147757672568,
+      "loss": -251.9141845703125
+    },
+    {
+      "batch": 95,
+      "side": "red",
+      "elapsed_seconds": 0.6803450000006706,
+      "games_per_second": 29.396850127479865,
+      "positions_per_second": 354.2320440361324,
+      "loss": -259.6317138671875
+    },
+    {
+      "batch": 96,
+      "side": "yellow",
+      "elapsed_seconds": 0.6834395000041695,
+      "games_per_second": 29.26374609585484,
+      "positions_per_second": 237.0363433764242,
+      "loss": -163.4315948486328
+    },
+    {
+      "batch": 97,
+      "side": "red",
+      "elapsed_seconds": 0.6398653000069316,
+      "games_per_second": 31.256578532674517,
+      "positions_per_second": 289.1233514272393,
+      "loss": -203.3685302734375
+    },
+    {
+      "batch": 98,
+      "side": "yellow",
+      "elapsed_seconds": 0.6556599000032293,
+      "games_per_second": 30.5036193305424,
+      "positions_per_second": 240.97859271128493,
+      "loss": -180.10324096679688
+    },
+    {
+      "batch": 99,
+      "side": "red",
+      "elapsed_seconds": 0.6240239000035217,
+      "games_per_second": 32.050054492924275,
+      "positions_per_second": 346.1405885235822,
+      "loss": -214.07008361816406
+    },
+    {
+      "batch": 100,
+      "side": "yellow",
+      "elapsed_seconds": 0.5912944000010611,
+      "games_per_second": 33.82409845241914,
+      "positions_per_second": 273.9751974645951,
+      "loss": -171.50466918945312
+    },
+    {
+      "batch": 101,
+      "side": "red",
+      "elapsed_seconds": 0.6977811999968253,
+      "games_per_second": 28.66227980933134,
+      "positions_per_second": 333.91555977871013,
+      "loss": -277.833251953125
+    },
+    {
+      "batch": 102,
+      "side": "yellow",
+      "elapsed_seconds": 0.6535951999976533,
+      "games_per_second": 30.599979926523037,
+      "positions_per_second": 310.58979625420886,
+      "loss": -239.8470916748047
+    },
+    {
+      "batch": 103,
+      "side": "red",
+      "elapsed_seconds": 0.5664336000045296,
+      "games_per_second": 35.30863988266245,
+      "positions_per_second": 296.59257501436457,
+      "loss": -211.2525634765625
+    },
+    {
+      "batch": 104,
+      "side": "yellow",
+      "elapsed_seconds": 0.5852718000096502,
+      "games_per_second": 34.17215727747387,
+      "positions_per_second": 230.66206162294864,
+      "loss": -203.9134521484375
+    },
+    {
+      "batch": 105,
+      "side": "red",
+      "elapsed_seconds": 0.643986600000062,
+      "games_per_second": 31.05654682876643,
+      "positions_per_second": 268.6391300688296,
+      "loss": -189.55453491210938
+    },
+    {
+      "batch": 106,
+      "side": "yellow",
+      "elapsed_seconds": 0.635644299996784,
+      "games_per_second": 31.46413804088417,
+      "positions_per_second": 259.5791388372944,
+      "loss": -188.3548583984375
+    },
+    {
+      "batch": 107,
+      "side": "red",
+      "elapsed_seconds": 0.7008741999889025,
+      "games_per_second": 28.535791444907908,
+      "positions_per_second": 319.60086418296856,
+      "loss": -264.5848388671875
+    },
+    {
+      "batch": 108,
+      "side": "yellow",
+      "elapsed_seconds": 0.5612991999951191,
+      "games_per_second": 35.63162035537181,
+      "positions_per_second": 258.32924757644565,
+      "loss": -182.75262451171875
+    },
+    {
+      "batch": 109,
+      "side": "red",
+      "elapsed_seconds": 0.6473652999993647,
+      "games_per_second": 30.894457889571203,
+      "positions_per_second": 296.58679573988354,
+      "loss": -255.048095703125
+    },
+    {
+      "batch": 110,
+      "side": "yellow",
+      "elapsed_seconds": 0.6910561999975471,
+      "games_per_second": 28.94120622906066,
+      "positions_per_second": 251.78849419282776,
+      "loss": -231.31661987304688
+    },
+    {
+      "batch": 111,
+      "side": "red",
+      "elapsed_seconds": 0.697800299996743,
+      "games_per_second": 28.661495273208324,
+      "positions_per_second": 353.9694666241228,
+      "loss": -234.40155029296875
+    },
+    {
+      "batch": 112,
+      "side": "yellow",
+      "elapsed_seconds": 0.6115483000030508,
+      "games_per_second": 32.70387637395154,
+      "positions_per_second": 207.66961497459226,
+      "loss": -163.80699157714844
+    },
+    {
+      "batch": 113,
+      "side": "red",
+      "elapsed_seconds": 0.658239099997445,
+      "games_per_second": 30.384095991984722,
+      "positions_per_second": 281.05288792585867,
+      "loss": -247.29510498046875
+    },
+    {
+      "batch": 114,
+      "side": "yellow",
+      "elapsed_seconds": 0.5311833000014303,
+      "games_per_second": 37.65178611591544,
+      "positions_per_second": 250.38437767083767,
+      "loss": -178.42388916015625
+    },
+    {
+      "batch": 115,
+      "side": "red",
+      "elapsed_seconds": 0.5771737000031862,
+      "games_per_second": 34.651613543530466,
+      "positions_per_second": 233.89839141883067,
+      "loss": -170.1748504638672
+    },
+    {
+      "batch": 116,
+      "side": "yellow",
+      "elapsed_seconds": 0.6387553999957163,
+      "games_per_second": 31.310889896404987,
+      "positions_per_second": 319.3710769433309,
+      "loss": -232.5448455810547
+    },
+    {
+      "batch": 117,
+      "side": "red",
+      "elapsed_seconds": 0.7447769999998854,
+      "games_per_second": 26.853675663994828,
+      "positions_per_second": 249.7391836751519,
+      "loss": -213.6774444580078
+    },
+    {
+      "batch": 118,
+      "side": "yellow",
+      "elapsed_seconds": 0.5840749999915715,
+      "games_per_second": 34.24217780300237,
+      "positions_per_second": 265.3768779732684,
+      "loss": -187.58056640625
+    },
+    {
+      "batch": 119,
+      "side": "red",
+      "elapsed_seconds": 0.7049646000086796,
+      "games_per_second": 28.37021887305229,
+      "positions_per_second": 339.02411553297486,
+      "loss": -281.3978271484375
+    },
+    {
+      "batch": 120,
+      "side": "yellow",
+      "elapsed_seconds": 0.6358815999992657,
+      "games_per_second": 31.452396169386084,
+      "positions_per_second": 228.0298722280491,
+      "loss": -179.45321655273438
+    },
+    {
+      "batch": 121,
+      "side": "red",
+      "elapsed_seconds": 0.6757243999891216,
+      "games_per_second": 29.597865639189553,
+      "positions_per_second": 332.9759884408825,
+      "loss": -303.95367431640625
+    },
+    {
+      "batch": 122,
+      "side": "yellow",
+      "elapsed_seconds": 0.6393868000013754,
+      "games_per_second": 31.279970121305254,
+      "positions_per_second": 217.39579234307152,
+      "loss": -213.57574462890625
+    },
+    {
+      "batch": 123,
+      "side": "red",
+      "elapsed_seconds": 0.6563946999958716,
+      "games_per_second": 30.469472102876196,
+      "positions_per_second": 272.70177532074194,
+      "loss": -222.55125427246094
+    },
+    {
+      "batch": 124,
+      "side": "yellow",
+      "elapsed_seconds": 0.6869792999932542,
+      "games_per_second": 29.11295871680033,
+      "positions_per_second": 320.24254588480363,
+      "loss": -272.23248291015625
+    },
+    {
+      "batch": 125,
+      "side": "red",
+      "elapsed_seconds": 0.6541002000012668,
+      "games_per_second": 30.576355121067486,
+      "positions_per_second": 227.79384565195278,
+      "loss": -215.87789916992188
+    },
+    {
+      "batch": 126,
+      "side": "yellow",
+      "elapsed_seconds": 0.5922889000066789,
+      "games_per_second": 33.76730511035151,
+      "positions_per_second": 229.61767475039025,
+      "loss": -143.2853240966797
+    },
+    {
+      "batch": 127,
+      "side": "red",
+      "elapsed_seconds": 0.6512080999964382,
+      "games_per_second": 30.712148697335596,
+      "positions_per_second": 334.762420800958,
+      "loss": -224.32638549804688
+    },
+    {
+      "batch": 128,
+      "side": "yellow",
+      "elapsed_seconds": 0.6872269000014057,
+      "games_per_second": 29.102469650066215,
+      "positions_per_second": 305.57593132569525,
+      "loss": -217.98199462890625
+    },
+    {
+      "batch": 129,
+      "side": "red",
+      "elapsed_seconds": 0.7162490000046091,
+      "games_per_second": 27.92325015444531,
+      "positions_per_second": 298.77877665256483,
+      "loss": -270.142822265625
+    },
+    {
+      "batch": 130,
+      "side": "yellow",
+      "elapsed_seconds": 0.5816699999995762,
+      "games_per_second": 34.383757113164805,
+      "positions_per_second": 230.37117265820416,
+      "loss": -130.81895446777344
+    },
+    {
+      "batch": 131,
+      "side": "red",
+      "elapsed_seconds": 0.7115396000008332,
+      "games_per_second": 28.10806313517418,
+      "positions_per_second": 300.7562755463637,
+      "loss": -237.71475219726562
+    },
+    {
+      "batch": 132,
+      "side": "yellow",
+      "elapsed_seconds": 0.570961499994155,
+      "games_per_second": 35.02863152805354,
+      "positions_per_second": 250.4547154255828,
+      "loss": -188.5330810546875
+    },
+    {
+      "batch": 133,
+      "side": "red",
+      "elapsed_seconds": 0.7254185999918263,
+      "games_per_second": 27.5702883827701,
+      "positions_per_second": 283.973970342532,
+      "loss": -168.05947875976562
+    },
+    {
+      "batch": 134,
+      "side": "yellow",
+      "elapsed_seconds": 0.5982067000004463,
+      "games_per_second": 33.433259774564675,
+      "positions_per_second": 245.73445934305036,
+      "loss": -223.05905151367188
+    },
+    {
+      "batch": 135,
+      "side": "red",
+      "elapsed_seconds": 0.5976278999878559,
+      "games_per_second": 33.46563974072564,
+      "positions_per_second": 297.8441936924582,
+      "loss": -244.5301055908203
+    },
+    {
+      "batch": 136,
+      "side": "yellow",
+      "elapsed_seconds": 0.5121156999957748,
+      "games_per_second": 39.05367478514135,
+      "positions_per_second": 249.9435186249046,
+      "loss": -195.92034912109375
+    },
+    {
+      "batch": 137,
+      "side": "red",
+      "elapsed_seconds": 0.6743864999880316,
+      "games_per_second": 29.656584169989973,
+      "positions_per_second": 259.49511148741226,
+      "loss": -252.73468017578125
+    },
+    {
+      "batch": 138,
+      "side": "yellow",
+      "elapsed_seconds": 0.6511878999881446,
+      "games_per_second": 30.713101395717143,
+      "positions_per_second": 284.09618791038355,
+      "loss": -232.42324829101562
+    },
+    {
+      "batch": 139,
+      "side": "red",
+      "elapsed_seconds": 0.6328060000087135,
+      "games_per_second": 31.60526290794431,
+      "positions_per_second": 289.1881556076905,
+      "loss": -190.425537109375
+    },
+    {
+      "batch": 140,
+      "side": "yellow",
+      "elapsed_seconds": 0.6587511000107042,
+      "games_per_second": 30.360480611986855,
+      "positions_per_second": 283.8704937220771,
+      "loss": -217.98861694335938
+    },
+    {
+      "batch": 141,
+      "side": "red",
+      "elapsed_seconds": 0.5854075999959605,
+      "games_per_second": 34.1642301878862,
+      "positions_per_second": 314.310917728553,
+      "loss": -165.93959045410156
+    },
+    {
+      "batch": 142,
+      "side": "yellow",
+      "elapsed_seconds": 0.6976693000033265,
+      "games_per_second": 28.666876985850802,
+      "positions_per_second": 239.36842283185422,
+      "loss": -239.90097045898438
+    },
+    {
+      "batch": 143,
+      "side": "red",
+      "elapsed_seconds": 0.5402838999871165,
+      "games_per_second": 37.01757539041404,
+      "positions_per_second": 273.93005788906385,
+      "loss": -135.5228729248047
+    },
+    {
+      "batch": 144,
+      "side": "yellow",
+      "elapsed_seconds": 0.5923178999946686,
+      "games_per_second": 33.76565185718686,
+      "positions_per_second": 224.54158485029262,
+      "loss": -159.78489685058594
+    },
+    {
+      "batch": 145,
+      "side": "red",
+      "elapsed_seconds": 0.5914781000028597,
+      "games_per_second": 33.813593436347524,
+      "positions_per_second": 270.5087474907802,
+      "loss": -188.7378692626953
+    },
+    {
+      "batch": 146,
+      "side": "yellow",
+      "elapsed_seconds": 0.673615100007737,
+      "games_per_second": 29.69054583213809,
+      "positions_per_second": 342.92580436119493,
+      "loss": -198.56887817382812
+    },
+    {
+      "batch": 147,
+      "side": "red",
+      "elapsed_seconds": 0.5518599000060931,
+      "games_per_second": 36.24108220180372,
+      "positions_per_second": 282.680441174069,
+      "loss": -144.92428588867188
+    },
+    {
+      "batch": 148,
+      "side": "yellow",
+      "elapsed_seconds": 0.6290899000014178,
+      "games_per_second": 31.791958510150813,
+      "positions_per_second": 282.94843074034225,
+      "loss": -161.3174591064453
+    },
+    {
+      "batch": 149,
+      "side": "red",
+      "elapsed_seconds": 0.5866882999980589,
+      "games_per_second": 34.089652035103086,
+      "positions_per_second": 366.4637593773582,
+      "loss": -221.53134155273438
+    },
+    {
+      "batch": 150,
+      "side": "yellow",
+      "elapsed_seconds": 0.6931848999956856,
+      "games_per_second": 28.852330741948478,
+      "positions_per_second": 287.0806908823874,
+      "loss": -204.5236358642578
+    },
+    {
+      "batch": 151,
+      "side": "red",
+      "elapsed_seconds": 0.6387507999897934,
+      "games_per_second": 31.311115383839173,
+      "positions_per_second": 320.9389326843515,
+      "loss": -133.2556915283203
+    },
+    {
+      "batch": 152,
+      "side": "yellow",
+      "elapsed_seconds": 0.7302468999987468,
+      "games_per_second": 27.38799712814162,
+      "positions_per_second": 249.23077386608875,
+      "loss": -178.25302124023438
+    },
+    {
+      "batch": 153,
+      "side": "red",
+      "elapsed_seconds": 0.5880622999975458,
+      "games_per_second": 34.01000200163055,
+      "positions_per_second": 358.8055211172024,
+      "loss": -165.2173309326172
+    },
+    {
+      "batch": 154,
+      "side": "yellow",
+      "elapsed_seconds": 0.6456308000051649,
+      "games_per_second": 30.977456465583742,
+      "positions_per_second": 250.9173973712283,
+      "loss": -172.5325469970703
+    },
+    {
+      "batch": 155,
+      "side": "red",
+      "elapsed_seconds": 0.6566129999991972,
+      "games_per_second": 30.459342108707034,
+      "positions_per_second": 362.4661710936137,
+      "loss": -194.01373291015625
+    },
+    {
+      "batch": 156,
+      "side": "yellow",
+      "elapsed_seconds": 0.5834892999992007,
+      "games_per_second": 34.276549715697264,
+      "positions_per_second": 221.08374566624735,
+      "loss": -153.9578857421875
+    },
+    {
+      "batch": 157,
+      "side": "red",
+      "elapsed_seconds": 0.5875614999968093,
+      "games_per_second": 34.038989961235735,
+      "positions_per_second": 299.54311165887447,
+      "loss": -177.80465698242188
+    },
+    {
+      "batch": 158,
+      "side": "yellow",
+      "elapsed_seconds": 0.5942817000031937,
+      "games_per_second": 33.65407348045972,
+      "positions_per_second": 265.86718049563177,
+      "loss": -150.0992889404297
+    },
+    {
+      "batch": 159,
+      "side": "red",
+      "elapsed_seconds": 0.6975530999916373,
+      "games_per_second": 28.67165238064281,
+      "positions_per_second": 431.5083683286743,
+      "loss": -226.48948669433594
+    },
+    {
+      "batch": 160,
+      "side": "yellow",
+      "elapsed_seconds": 0.6163355000026058,
+      "games_per_second": 32.44985888353898,
+      "positions_per_second": 282.3137722867892,
+      "loss": -174.1617431640625
+    },
+    {
+      "batch": 161,
+      "side": "red",
+      "elapsed_seconds": 0.6595483999990392,
+      "games_per_second": 30.323779119211167,
+      "positions_per_second": 277.4625789407822,
+      "loss": -164.8096160888672
+    },
+    {
+      "batch": 162,
+      "side": "yellow",
+      "elapsed_seconds": 0.5677780000114581,
+      "games_per_second": 35.22503513626169,
+      "positions_per_second": 267.71026703558886,
+      "loss": -160.21527099609375
+    },
+    {
+      "batch": 163,
+      "side": "red",
+      "elapsed_seconds": 0.6439345999970101,
+      "games_per_second": 31.05905475508361,
+      "positions_per_second": 279.5314927957525,
+      "loss": -144.0561981201172
+    },
+    {
+      "batch": 164,
+      "side": "yellow",
+      "elapsed_seconds": 0.5649124000046868,
+      "games_per_second": 35.403719231218986,
+      "positions_per_second": 320.4036590425318,
+      "loss": -147.9939727783203
+    },
+    {
+      "batch": 165,
+      "side": "red",
+      "elapsed_seconds": 0.6637351000099443,
+      "games_per_second": 30.132503162331407,
+      "positions_per_second": 302.83165678143064,
+      "loss": -148.2840576171875
+    },
+    {
+      "batch": 166,
+      "side": "yellow",
+      "elapsed_seconds": 0.6024338999995962,
+      "games_per_second": 33.19866295707032,
+      "positions_per_second": 361.8654262320665,
+      "loss": -187.86575317382812
+    },
+    {
+      "batch": 167,
+      "side": "red",
+      "elapsed_seconds": 0.6975495000078809,
+      "games_per_second": 28.671800352195852,
+      "positions_per_second": 273.8156933634704,
+      "loss": -129.14306640625
+    },
+    {
+      "batch": 168,
+      "side": "yellow",
+      "elapsed_seconds": 0.584862300005625,
+      "games_per_second": 34.19608341964877,
+      "positions_per_second": 251.3412131344185,
+      "loss": -178.99420166015625
+    },
+    {
+      "batch": 169,
+      "side": "red",
+      "elapsed_seconds": 0.6369220000051428,
+      "games_per_second": 31.40101927683219,
+      "positions_per_second": 384.66248614119434,
+      "loss": -170.75973510742188
+    },
+    {
+      "batch": 170,
+      "side": "yellow",
+      "elapsed_seconds": 0.6428404000034789,
+      "games_per_second": 31.111921403651305,
+      "positions_per_second": 273.7849083521315,
+      "loss": -238.8001708984375
+    },
+    {
+      "batch": 171,
+      "side": "red",
+      "elapsed_seconds": 0.6768455999990692,
+      "games_per_second": 29.548836544150547,
+      "positions_per_second": 314.6951091952033,
+      "loss": -194.27212524414062
+    },
+    {
+      "batch": 172,
+      "side": "yellow",
+      "elapsed_seconds": 0.6337321999890264,
+      "games_per_second": 31.559071797750402,
+      "positions_per_second": 254.05052797189072,
+      "loss": -181.24722290039062
+    },
+    {
+      "batch": 173,
+      "side": "red",
+      "elapsed_seconds": 0.588220799996634,
+      "games_per_second": 34.00083778083748,
+      "positions_per_second": 307.70758191657916,
+      "loss": -155.3560028076172
+    },
+    {
+      "batch": 174,
+      "side": "yellow",
+      "elapsed_seconds": 0.784150999999838,
+      "games_per_second": 25.505291710402886,
+      "positions_per_second": 280.55820881443174,
+      "loss": -276.41973876953125
+    },
+    {
+      "batch": 175,
+      "side": "red",
+      "elapsed_seconds": 0.5873175999877276,
+      "games_per_second": 34.0531256008979,
+      "positions_per_second": 296.26219272781174,
+      "loss": -157.64019775390625
+    },
+    {
+      "batch": 176,
+      "side": "yellow",
+      "elapsed_seconds": 0.5756766999984393,
+      "games_per_second": 34.74172222022226,
+      "positions_per_second": 234.50662498650024,
+      "loss": -132.70851135253906
+    },
+    {
+      "batch": 177,
+      "side": "red",
+      "elapsed_seconds": 0.7058762000087881,
+      "games_per_second": 28.333580307355597,
+      "positions_per_second": 323.0028155038538,
+      "loss": -235.57882690429688
+    },
+    {
+      "batch": 178,
+      "side": "yellow",
+      "elapsed_seconds": 0.5196284999983618,
+      "games_per_second": 38.48903591712743,
+      "positions_per_second": 250.1787334613283,
+      "loss": -146.54360961914062
+    },
+    {
+      "batch": 179,
+      "side": "red",
+      "elapsed_seconds": 0.6045409000071231,
+      "games_per_second": 33.082956008045684,
+      "positions_per_second": 344.06274248367515,
+      "loss": -139.96435546875
+    },
+    {
+      "batch": 180,
+      "side": "yellow",
+      "elapsed_seconds": 0.6274360999959754,
+      "games_per_second": 31.87575595367925,
+      "positions_per_second": 235.88059405722643,
+      "loss": -173.45359802246094
+    },
+    {
+      "batch": 181,
+      "side": "red",
+      "elapsed_seconds": 0.5940610999969067,
+      "games_per_second": 33.666570661004634,
+      "positions_per_second": 329.93239247784544,
+      "loss": -168.45419311523438
+    },
+    {
+      "batch": 182,
+      "side": "yellow",
+      "elapsed_seconds": 0.6236367999954382,
+      "games_per_second": 32.06994840610159,
+      "positions_per_second": 245.33510530667718,
+      "loss": -136.60177612304688
+    },
+    {
+      "batch": 183,
+      "side": "red",
+      "elapsed_seconds": 0.6085066000086954,
+      "games_per_second": 32.867350986356115,
+      "positions_per_second": 258.0087052428955,
+      "loss": -148.92245483398438
+    },
+    {
+      "batch": 184,
+      "side": "yellow",
+      "elapsed_seconds": 0.5980039999994915,
+      "games_per_second": 33.44459234389236,
+      "positions_per_second": 297.656871860642,
+      "loss": -195.49093627929688
+    },
+    {
+      "batch": 185,
+      "side": "red",
+      "elapsed_seconds": 0.6296034999977564,
+      "games_per_second": 31.76602417246929,
+      "positions_per_second": 301.77722963845827,
+      "loss": -217.7626953125
+    },
+    {
+      "batch": 186,
+      "side": "yellow",
+      "elapsed_seconds": 0.5388896999938879,
+      "games_per_second": 37.1133462009514,
+      "positions_per_second": 265.3604253368025,
+      "loss": -151.43692016601562
+    },
+    {
+      "batch": 187,
+      "side": "red",
+      "elapsed_seconds": 0.5569561000011163,
+      "games_per_second": 35.90947293684352,
+      "positions_per_second": 283.68483620106383,
+      "loss": -164.5948486328125
+    },
+    {
+      "batch": 188,
+      "side": "yellow",
+      "elapsed_seconds": 0.5903289999987464,
+      "games_per_second": 33.87941300536221,
+      "positions_per_second": 223.60412583539062,
+      "loss": -161.0821075439453
+    },
+    {
+      "batch": 189,
+      "side": "red",
+      "elapsed_seconds": 0.5929946000105701,
+      "games_per_second": 33.7271199428182,
+      "positions_per_second": 332.21213143675925,
+      "loss": -125.59529113769531
+    },
+    {
+      "batch": 190,
+      "side": "yellow",
+      "elapsed_seconds": 0.5502108000073349,
+      "games_per_second": 36.34970451276743,
+      "positions_per_second": 250.81296113809526,
+      "loss": -140.94842529296875
+    },
+    {
+      "batch": 191,
+      "side": "red",
+      "elapsed_seconds": 0.5731594999961089,
+      "games_per_second": 34.8943008013228,
+      "positions_per_second": 324.51699745230206,
+      "loss": -135.6551513671875
+    },
+    {
+      "batch": 192,
+      "side": "yellow",
+      "elapsed_seconds": 0.5852677999937441,
+      "games_per_second": 34.17239082726536,
+      "positions_per_second": 285.3394634076658,
+      "loss": -130.68865966796875
+    },
+    {
+      "batch": 193,
+      "side": "red",
+      "elapsed_seconds": 0.6721440999972401,
+      "games_per_second": 29.755524150375077,
+      "positions_per_second": 296.06746529623206,
+      "loss": -121.91572570800781
+    },
+    {
+      "batch": 194,
+      "side": "yellow",
+      "elapsed_seconds": 0.6094601999939186,
+      "games_per_second": 32.8159246497139,
+      "positions_per_second": 275.6537670575968,
+      "loss": -125.04036712646484
+    },
+    {
+      "batch": 195,
+      "side": "red",
+      "elapsed_seconds": 0.6050111999938963,
+      "games_per_second": 33.057239271275925,
+      "positions_per_second": 295.8622914779195,
+      "loss": -104.19798278808594
+    },
+    {
+      "batch": 196,
+      "side": "yellow",
+      "elapsed_seconds": 0.637459100005799,
+      "games_per_second": 31.374561912784774,
+      "positions_per_second": 271.3899605455883,
+      "loss": -153.74781799316406
+    },
+    {
+      "batch": 197,
+      "side": "red",
+      "elapsed_seconds": 0.4674624000035692,
+      "games_per_second": 42.784189701347735,
+      "positions_per_second": 273.8188140886255,
+      "loss": -98.13258361816406
+    },
+    {
+      "batch": 198,
+      "side": "yellow",
+      "elapsed_seconds": 0.6399814000033075,
+      "games_per_second": 31.250908229358913,
+      "positions_per_second": 250.0072658348713,
+      "loss": -177.82168579101562
+    },
+    {
+      "batch": 199,
+      "side": "red",
+      "elapsed_seconds": 0.5548252000007778,
+      "games_per_second": 36.047389339871295,
+      "positions_per_second": 268.5530505820412,
+      "loss": -38.92700958251953
+    },
+    {
+      "batch": 200,
+      "side": "yellow",
+      "elapsed_seconds": 0.7855975000129547,
+      "games_per_second": 25.458329487645003,
+      "positions_per_second": 314.41036917241576,
+      "loss": -264.3370666503906
+    },
+    {
+      "batch": 201,
+      "side": "red",
+      "elapsed_seconds": 0.5952285999956075,
+      "games_per_second": 33.60053599599816,
+      "positions_per_second": 304.0848507637833,
+      "loss": -158.19656372070312
+    },
+    {
+      "batch": 202,
+      "side": "yellow",
+      "elapsed_seconds": 0.5457619999942835,
+      "games_per_second": 36.646010532447264,
+      "positions_per_second": 252.85747267388615,
+      "loss": -169.95962524414062
+    },
+    {
+      "batch": 203,
+      "side": "red",
+      "elapsed_seconds": 0.581882599988603,
+      "games_per_second": 34.37119446498611,
+      "positions_per_second": 261.22107793389443,
+      "loss": -121.80776977539062
+    },
+    {
+      "batch": 204,
+      "side": "yellow",
+      "elapsed_seconds": 0.5304711000062525,
+      "games_per_second": 37.70233665842355,
+      "positions_per_second": 292.1931091027825,
+      "loss": -198.31759643554688
+    },
+    {
+      "batch": 205,
+      "side": "red",
+      "elapsed_seconds": 0.677082900001551,
+      "games_per_second": 29.538480443021356,
+      "positions_per_second": 384.0002457592776,
+      "loss": -224.66275024414062
+    },
+    {
+      "batch": 206,
+      "side": "yellow",
+      "elapsed_seconds": 0.5050461000064388,
+      "games_per_second": 39.60034539370767,
+      "positions_per_second": 308.8826940709198,
+      "loss": -150.96920776367188
+    },
+    {
+      "batch": 207,
+      "side": "red",
+      "elapsed_seconds": 0.6811887999938335,
+      "games_per_second": 29.3604357561091,
+      "positions_per_second": 305.3485318635346,
+      "loss": -241.89599609375
+    },
+    {
+      "batch": 208,
+      "side": "yellow",
+      "elapsed_seconds": 0.6553856000100495,
+      "games_per_second": 30.51638607820087,
+      "positions_per_second": 302.1122221741886,
+      "loss": -187.1569366455078
+    },
+    {
+      "batch": 209,
+      "side": "red",
+      "elapsed_seconds": 0.6370580999937374,
+      "games_per_second": 31.394310817485266,
+      "positions_per_second": 313.9431081748526,
+      "loss": -204.51904296875
+    },
+    {
+      "batch": 210,
+      "side": "yellow",
+      "elapsed_seconds": 0.5303210999991279,
+      "games_per_second": 37.713000670787736,
+      "positions_per_second": 265.87665472905354,
+      "loss": -159.55624389648438
+    },
+    {
+      "batch": 211,
+      "side": "red",
+      "elapsed_seconds": 0.6705967000016244,
+      "games_per_second": 29.824184938505592,
+      "positions_per_second": 252.01436273037226,
+      "loss": -218.4505615234375
+    },
+    {
+      "batch": 212,
+      "side": "yellow",
+      "elapsed_seconds": 0.8302434000070207,
+      "games_per_second": 24.089321275942545,
+      "positions_per_second": 376.9978779685008,
+      "loss": -351.11358642578125
+    },
+    {
+      "batch": 213,
+      "side": "red",
+      "elapsed_seconds": 0.7469301000091946,
+      "games_per_second": 26.776267283583568,
+      "positions_per_second": 275.79555302091075,
+      "loss": -203.25836181640625
+    },
+    {
+      "batch": 214,
+      "side": "yellow",
+      "elapsed_seconds": 0.5751273000059882,
+      "games_per_second": 34.774909832643594,
+      "positions_per_second": 250.37935079503384,
+      "loss": -138.15707397460938
+    },
+    {
+      "batch": 215,
+      "side": "red",
+      "elapsed_seconds": 0.605666299990844,
+      "games_per_second": 33.02148394305964,
+      "positions_per_second": 257.5675747558652,
+      "loss": -90.34596252441406
+    },
+    {
+      "batch": 216,
+      "side": "yellow",
+      "elapsed_seconds": 0.5854145000048447,
+      "games_per_second": 34.163827509968556,
+      "positions_per_second": 268.18604595325314,
+      "loss": -146.87452697753906
+    },
+    {
+      "batch": 217,
+      "side": "red",
+      "elapsed_seconds": 0.5817651999968803,
+      "games_per_second": 34.37813055869834,
+      "positions_per_second": 340.34349253111355,
+      "loss": -184.69833374023438
+    },
+    {
+      "batch": 218,
+      "side": "yellow",
+      "elapsed_seconds": 0.5452291999972658,
+      "games_per_second": 36.68182114989494,
+      "positions_per_second": 188.9113789219589,
+      "loss": -82.67588806152344
+    },
+    {
+      "batch": 219,
+      "side": "red",
+      "elapsed_seconds": 0.5633388999995077,
+      "games_per_second": 35.50260775532717,
+      "positions_per_second": 301.77216592028094,
+      "loss": -93.87997436523438
+    },
+    {
+      "batch": 220,
+      "side": "yellow",
+      "elapsed_seconds": 0.5447447999904398,
+      "games_per_second": 36.71443949598233,
+      "positions_per_second": 290.04407201826047,
+      "loss": -150.44906616210938
+    },
+    {
+      "batch": 221,
+      "side": "red",
+      "elapsed_seconds": 0.5972501000069315,
+      "games_per_second": 33.48680895954289,
+      "positions_per_second": 344.9141322832918,
+      "loss": -118.68470764160156
+    },
+    {
+      "batch": 222,
+      "side": "yellow",
+      "elapsed_seconds": 0.564945500009344,
+      "games_per_second": 35.40164493684649,
+      "positions_per_second": 261.97217253266405,
+      "loss": -141.35873413085938
+    },
+    {
+      "batch": 223,
+      "side": "red",
+      "elapsed_seconds": 0.690404099994339,
+      "games_per_second": 28.968541757159308,
+      "positions_per_second": 302.72126136231475,
+      "loss": -142.58706665039062
+    },
+    {
+      "batch": 224,
+      "side": "yellow",
+      "elapsed_seconds": 0.569813800000702,
+      "games_per_second": 35.099185031979495,
+      "positions_per_second": 286.0583580106329,
+      "loss": -138.74203491210938
+    },
+    {
+      "batch": 225,
+      "side": "red",
+      "elapsed_seconds": 0.761817600010545,
+      "games_per_second": 26.253003343219113,
+      "positions_per_second": 297.97158794553695,
+      "loss": -228.66128540039062
+    },
+    {
+      "batch": 226,
+      "side": "yellow",
+      "elapsed_seconds": 0.5852399000141304,
+      "games_per_second": 34.17401991818587,
+      "positions_per_second": 258.0138503823033,
+      "loss": -148.29244995117188
+    },
+    {
+      "batch": 227,
+      "side": "red",
+      "elapsed_seconds": 0.5660559000098146,
+      "games_per_second": 35.332199522438025,
+      "positions_per_second": 282.6575961795042,
+      "loss": -188.41256713867188
+    },
+    {
+      "batch": 228,
+      "side": "yellow",
+      "elapsed_seconds": 0.7022938000009162,
+      "games_per_second": 28.4781098736368,
+      "positions_per_second": 324.6504525594595,
+      "loss": -169.38137817382812
+    },
+    {
+      "batch": 229,
+      "side": "red",
+      "elapsed_seconds": 0.5847540999966441,
+      "games_per_second": 34.20241089393778,
+      "positions_per_second": 343.73422948407466,
+      "loss": -178.5478515625
+    },
+    {
+      "batch": 230,
+      "side": "yellow",
+      "elapsed_seconds": 0.5955514999950537,
+      "games_per_second": 33.58231823808035,
+      "positions_per_second": 253.5465026975066,
+      "loss": -98.28874206542969
+    },
+    {
+      "batch": 231,
+      "side": "red",
+      "elapsed_seconds": 0.5560219000035431,
+      "games_per_second": 35.96980622502918,
+      "positions_per_second": 402.86182972032685,
+      "loss": -84.21287536621094
+    },
+    {
+      "batch": 232,
+      "side": "yellow",
+      "elapsed_seconds": 0.7196604000055231,
+      "games_per_second": 27.790885812039274,
+      "positions_per_second": 318.20564254784966,
+      "loss": -208.48202514648438
+    },
+    {
+      "batch": 233,
+      "side": "red",
+      "elapsed_seconds": 0.5877087999979267,
+      "games_per_second": 34.030458621804804,
+      "positions_per_second": 319.88631104496517,
+      "loss": -179.50503540039062
+    },
+    {
+      "batch": 234,
+      "side": "yellow",
+      "elapsed_seconds": 0.5418225000030361,
+      "games_per_second": 36.912457492791326,
+      "positions_per_second": 332.21211743512197,
+      "loss": -113.30358123779297
+    },
+    {
+      "batch": 235,
+      "side": "red",
+      "elapsed_seconds": 0.6813239000039175,
+      "games_per_second": 29.354613862635677,
+      "positions_per_second": 259.7883326843257,
+      "loss": -104.68505859375
+    },
+    {
+      "batch": 236,
+      "side": "yellow",
+      "elapsed_seconds": 0.5102438000030816,
+      "games_per_second": 39.196948595708974,
+      "positions_per_second": 217.54306470618482,
+      "loss": -98.5244140625
+    },
+    {
+      "batch": 237,
+      "side": "red",
+      "elapsed_seconds": 0.5564525999943726,
+      "games_per_second": 35.9419652279498,
+      "positions_per_second": 339.65157140412566,
+      "loss": -87.20487976074219
+    },
+    {
+      "batch": 238,
+      "side": "yellow",
+      "elapsed_seconds": 0.6110207000019727,
+      "games_per_second": 32.73211529484259,
+      "positions_per_second": 242.2176531818352,
+      "loss": -125.37026977539062
+    },
+    {
+      "batch": 239,
+      "side": "red",
+      "elapsed_seconds": 0.6009770999953616,
+      "games_per_second": 33.27913825693918,
+      "positions_per_second": 362.742607000637,
+      "loss": -116.89614868164062
+    },
+    {
+      "batch": 240,
+      "side": "yellow",
+      "elapsed_seconds": 0.681082700000843,
+      "games_per_second": 29.365009564881394,
+      "positions_per_second": 300.99134804003427,
+      "loss": -173.60629272460938
+    },
+    {
+      "batch": 241,
+      "side": "red",
+      "elapsed_seconds": 0.5890919000084978,
+      "games_per_second": 33.950560175265515,
+      "positions_per_second": 288.5797614897569,
+      "loss": -39.02819061279297
+    },
+    {
+      "batch": 242,
+      "side": "yellow",
+      "elapsed_seconds": 0.5572456999943824,
+      "games_per_second": 35.890810822230875,
+      "positions_per_second": 249.44113521450456,
+      "loss": -142.400390625
+    },
+    {
+      "batch": 243,
+      "side": "red",
+      "elapsed_seconds": 0.5929744000022765,
+      "games_per_second": 33.72826887623347,
+      "positions_per_second": 308.6136602175363,
+      "loss": -180.85574340820312
+    },
+    {
+      "batch": 244,
+      "side": "yellow",
+      "elapsed_seconds": 0.6127682999940589,
+      "games_per_second": 32.63876411393003,
+      "positions_per_second": 228.4713487975102,
+      "loss": -156.60423278808594
+    },
+    {
+      "batch": 245,
+      "side": "red",
+      "elapsed_seconds": 0.65199389999907,
+      "games_per_second": 30.6751336170914,
+      "positions_per_second": 303.68382280920486,
+      "loss": -208.08323669433594
+    },
+    {
+      "batch": 246,
+      "side": "yellow",
+      "elapsed_seconds": 0.6782872000039788,
+      "games_per_second": 29.486034824013604,
+      "positions_per_second": 212.29945073289795,
+      "loss": -174.6419677734375
+    },
+    {
+      "batch": 247,
+      "side": "red",
+      "elapsed_seconds": 0.5695873000076972,
+      "games_per_second": 35.11314244494167,
+      "positions_per_second": 298.4617107820042,
+      "loss": -156.26925659179688
+    },
+    {
+      "batch": 248,
+      "side": "yellow",
+      "elapsed_seconds": 0.5699329000053694,
+      "games_per_second": 35.09185028590484,
+      "positions_per_second": 252.66132205851486,
+      "loss": -131.3125762939453
+    },
+    {
+      "batch": 249,
+      "side": "red",
+      "elapsed_seconds": 0.6032385000144131,
+      "games_per_second": 33.154382552708654,
+      "positions_per_second": 341.4901402928992,
+      "loss": -140.38121032714844
+    },
+    {
+      "batch": 250,
+      "side": "yellow",
+      "elapsed_seconds": 0.5903631999972276,
+      "games_per_second": 33.877450356143335,
+      "positions_per_second": 216.81568227931737,
+      "loss": -120.04615783691406
+    },
+    {
+      "batch": 251,
+      "side": "red",
+      "elapsed_seconds": 0.6084792000037851,
+      "games_per_second": 32.868831013246776,
+      "positions_per_second": 276.0981805112729,
+      "loss": -131.30136108398438
+    },
+    {
+      "batch": 252,
+      "side": "yellow",
+      "elapsed_seconds": 0.5673667999944882,
+      "games_per_second": 35.25056453813352,
+      "positions_per_second": 253.80406467456135,
+      "loss": -164.16856384277344
+    },
+    {
+      "batch": 253,
+      "side": "red",
+      "elapsed_seconds": 0.5977048000058858,
+      "games_per_second": 33.46133408967613,
+      "positions_per_second": 373.09387509988886,
+      "loss": -146.22598266601562
+    },
+    {
+      "batch": 254,
+      "side": "yellow",
+      "elapsed_seconds": 0.6097287999873515,
+      "games_per_second": 32.801468456820295,
+      "positions_per_second": 229.61027919774205,
+      "loss": -141.95257568359375
+    },
+    {
+      "batch": 255,
+      "side": "red",
+      "elapsed_seconds": 0.6018996999919182,
+      "games_per_second": 33.22812754395549,
+      "positions_per_second": 285.7618968780172,
+      "loss": -148.37521362304688
+    },
+    {
+      "batch": 256,
+      "side": "yellow",
+      "elapsed_seconds": 0.5275856999942334,
+      "games_per_second": 37.9085331543645,
+      "positions_per_second": 267.2551587382697,
+      "loss": -131.70510864257812
+    },
+    {
+      "batch": 257,
+      "side": "red",
+      "elapsed_seconds": 0.5865097999922,
+      "games_per_second": 34.100026973574835,
+      "positions_per_second": 369.98529266328694,
+      "loss": -191.36895751953125
+    },
+    {
+      "batch": 258,
+      "side": "yellow",
+      "elapsed_seconds": 0.5991970999893965,
+      "games_per_second": 33.3779986591289,
+      "positions_per_second": 248.6660900105103,
+      "loss": -164.77365112304688
+    },
+    {
+      "batch": 259,
+      "side": "red",
+      "elapsed_seconds": 0.7591069000045536,
+      "games_per_second": 26.346750371891005,
+      "positions_per_second": 250.29412853296455,
+      "loss": -134.77845764160156
+    },
+    {
+      "batch": 260,
+      "side": "yellow",
+      "elapsed_seconds": 0.6772020000062184,
+      "games_per_second": 29.53328548913965,
+      "positions_per_second": 363.2594115164177,
+      "loss": -168.07159423828125
+    },
+    {
+      "batch": 261,
+      "side": "red",
+      "elapsed_seconds": 0.600109999999404,
+      "games_per_second": 33.32722334242033,
+      "positions_per_second": 296.61228774754096,
+      "loss": -141.97894287109375
+    },
+    {
+      "batch": 262,
+      "side": "yellow",
+      "elapsed_seconds": 0.6801995999994688,
+      "games_per_second": 29.40313402127202,
+      "positions_per_second": 314.6135340276106,
+      "loss": -217.1973419189453
+    },
+    {
+      "batch": 263,
+      "side": "red",
+      "elapsed_seconds": 0.5939248999929987,
+      "games_per_second": 33.67429114394053,
+      "positions_per_second": 319.90576586743504,
+      "loss": -109.90419006347656
+    },
+    {
+      "batch": 264,
+      "side": "yellow",
+      "elapsed_seconds": 0.46997569999075495,
+      "games_per_second": 42.55539169449277,
+      "positions_per_second": 276.610046014203,
+      "loss": -89.72930908203125
+    },
+    {
+      "batch": 265,
+      "side": "red",
+      "elapsed_seconds": 0.5561729999899399,
+      "games_per_second": 35.960034018842634,
+      "positions_per_second": 276.89226194508825,
+      "loss": -102.48515319824219
+    },
+    {
+      "batch": 266,
+      "side": "yellow",
+      "elapsed_seconds": 0.72163049998926,
+      "games_per_second": 27.71501481755228,
+      "positions_per_second": 296.5506585478094,
+      "loss": -205.57569885253906
+    },
+    {
+      "batch": 267,
+      "side": "red",
+      "elapsed_seconds": 0.6765163999953074,
+      "games_per_second": 29.563215319153723,
+      "positions_per_second": 459.7079982128404,
+      "loss": -201.66249084472656
+    },
+    {
+      "batch": 268,
+      "side": "yellow",
+      "elapsed_seconds": 0.566735600004904,
+      "games_per_second": 35.28982474336699,
+      "positions_per_second": 326.4308788761447,
+      "loss": -103.98561096191406
+    },
+    {
+      "batch": 269,
+      "side": "red",
+      "elapsed_seconds": 0.6666067999904044,
+      "games_per_second": 30.002694242374805,
+      "positions_per_second": 549.049304635459,
+      "loss": -168.38357543945312
+    },
+    {
+      "batch": 270,
+      "side": "yellow",
+      "elapsed_seconds": 0.4919662000029348,
+      "games_per_second": 40.6531993455662,
+      "positions_per_second": 280.5070754844068,
+      "loss": -108.61062622070312
+    },
+    {
+      "batch": 271,
+      "side": "red",
+      "elapsed_seconds": 0.7085933000053046,
+      "games_per_second": 28.22493523414669,
+      "positions_per_second": 410.6728076568344,
+      "loss": -192.08824157714844
+    },
+    {
+      "batch": 272,
+      "side": "yellow",
+      "elapsed_seconds": 0.6485610000090674,
+      "games_per_second": 30.837500250123558,
+      "positions_per_second": 533.4887543271376,
+      "loss": -159.85772705078125
+    },
+    {
+      "batch": 273,
+      "side": "red",
+      "elapsed_seconds": 0.632461900007911,
+      "games_per_second": 31.62245820617785,
+      "positions_per_second": 425.3220628730921,
+      "loss": -195.65377807617188
+    },
+    {
+      "batch": 274,
+      "side": "yellow",
+      "elapsed_seconds": 0.5931725999980699,
+      "games_per_second": 33.71699906581166,
+      "positions_per_second": 472.0379869213633,
+      "loss": -112.38774108886719
+    },
+    {
+      "batch": 275,
+      "side": "red",
+      "elapsed_seconds": 0.6149978999892483,
+      "games_per_second": 32.52043624921264,
+      "positions_per_second": 411.3835185525399,
+      "loss": -130.665283203125
+    },
+    {
+      "batch": 276,
+      "side": "yellow",
+      "elapsed_seconds": 0.515669300002628,
+      "games_per_second": 38.78454660748289,
+      "positions_per_second": 453.77919530754974,
+      "loss": -74.07025146484375
+    },
+    {
+      "batch": 277,
+      "side": "red",
+      "elapsed_seconds": 0.544627399998717,
+      "games_per_second": 36.722353667933554,
+      "positions_per_second": 328.6650653280053,
+      "loss": -127.61622619628906
+    },
+    {
+      "batch": 278,
+      "side": "yellow",
+      "elapsed_seconds": 0.4882939999952214,
+      "games_per_second": 40.958930480808135,
+      "positions_per_second": 237.5617967886872,
+      "loss": -39.639591217041016
+    },
+    {
+      "batch": 279,
+      "side": "red",
+      "elapsed_seconds": 0.5953074999997625,
+      "games_per_second": 33.596082696770964,
+      "positions_per_second": 285.5667029225532,
+      "loss": -114.13351440429688
+    },
+    {
+      "batch": 280,
+      "side": "yellow",
+      "elapsed_seconds": 0.469032299995888,
+      "games_per_second": 42.64098655929525,
+      "positions_per_second": 247.31772204391245,
+      "loss": -55.21401596069336
+    },
+    {
+      "batch": 281,
+      "side": "red",
+      "elapsed_seconds": 0.6594779000006383,
+      "games_per_second": 30.327020814466476,
+      "positions_per_second": 327.53182479623797,
+      "loss": -165.822021484375
+    },
+    {
+      "batch": 282,
+      "side": "yellow",
+      "elapsed_seconds": 0.6106862000015099,
+      "games_per_second": 32.75004413060349,
+      "positions_per_second": 316.03792586032375,
+      "loss": -115.3100814819336
+    },
+    {
+      "batch": 283,
+      "side": "red",
+      "elapsed_seconds": 0.5798800000047777,
+      "games_per_second": 34.48989446063879,
+      "positions_per_second": 313.85803959181294,
+      "loss": -110.88436126708984
+    },
+    {
+      "batch": 284,
+      "side": "yellow",
+      "elapsed_seconds": 0.6524874000024283,
+      "games_per_second": 30.65193289544835,
+      "positions_per_second": 225.2917067815454,
+      "loss": -102.07505798339844
+    },
+    {
+      "batch": 285,
+      "side": "red",
+      "elapsed_seconds": 0.6110152000037488,
+      "games_per_second": 32.73240993002677,
+      "positions_per_second": 302.7747918527476,
+      "loss": -163.83013916015625
+    },
+    {
+      "batch": 286,
+      "side": "yellow",
+      "elapsed_seconds": 0.5433816000004299,
+      "games_per_second": 36.8065462650634,
+      "positions_per_second": 268.68778773496285,
+      "loss": -126.22929382324219
+    }
+  ]
+}

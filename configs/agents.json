@@ -1,0 +1,28 @@
+{
+  "RandomAgent": {},
+  "RuleBasedThink3Agent": {},
+  "DepthMinimaxAgent": {"depth": 3},
+  "AlphaBetaAgent": {"depth": 3},
+  "PositionEvalAgent": {
+    "depth": 3,
+    "checkpoint": "checkpoints/pretrained/position_eval.pt"
+  },
+  "MCTSAgent": {
+    "num_rollouts": 100,
+    "exploration_constant": 1.4
+  },
+  "AlphaGoAgent": {
+    "weight": 0.75,
+    "depth": 45,
+    "policy_rollout": false,
+    "num_rollouts": 584,
+    "policy_checkpoint": "checkpoints/pretrained/policy_gradient_conn.pt",
+    "value_checkpoint": "checkpoints/pretrained/value_conn.pt",
+    "rollout_policy_checkpoint": "checkpoints/pretrained/policy_conn.pt"
+  },
+  "AlphaZeroAgent": {
+    "weight": 0.75,
+    "num_rollouts": 584,
+    "checkpoint": "checkpoints/pretrained/connzero_book_iter_004.pt"
+  }
+}

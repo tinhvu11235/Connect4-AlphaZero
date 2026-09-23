@@ -1,0 +1,68 @@
+{
+  "timestamp": "2026-09-23T06:29:32.030845+07:00",
+  "kind": "pre_optimization_baseline",
+  "system": {
+    "platform": "Windows-10-10.0.19045-SP0",
+    "logical_cpu_count": 20,
+    "physical_cpu_count": 14,
+    "system_ram_gb": 31.747482299804688,
+    "torch_version": "2.11.0+cu128",
+    "cuda_version": "12.8",
+    "gpu": "NVIDIA GeForce RTX 5060",
+    "torch_num_threads": 14,
+    "torch_num_interop_threads": 14
+  },
+  "workload": {
+    "phase_seconds": 5.0,
+    "mcts_rollouts": 100,
+    "self_play_rollouts": 4,
+    "training_batch_games": 2
+  },
+  "mcts": {
+    "elapsed_seconds": 5.000660899997456,
+    "iterations": 385.0,
+    "rollouts": 38500.0,
+    "rollouts_per_second": 7698.98234851709
+  },
+  "policy_single_inference": {
+    "elapsed_seconds": 5.000411899993196,
+    "iterations": 11782.0,
+    "positions": 11782.0,
+    "positions_per_second": 2356.2058957615136
+  },
+  "value_single_inference": {
+    "elapsed_seconds": 5.000197400004254,
+    "iterations": 13587.0,
+    "positions": 13587.0,
+    "positions_per_second": 2717.2927212810523
+  },
+  "self_play": {
+    "elapsed_seconds": 5.001833100002841,
+    "iterations": 341.0,
+    "games": 341.0,
+    "positions": 2791.0,
+    "completed_games": 341.0,
+    "games_per_second": 68.17500567937908,
+    "positions_per_second": 557.9954277159737
+  },
+  "training": {
+    "elapsed_seconds": 5.035688999996637,
+    "iterations": 117.0,
+    "games": 234.0,
+    "training_steps": 2076.0,
+    "parameter_updates": 117.0,
+    "games_per_second": 46.46831843669382,
+    "training_steps_per_second": 412.25738920759136,
+    "first_loss": -4.414999008178711,
+    "last_loss": 24.278369903564453,
+    "mean_loss": -3.179300954199245
+  },
+  "monitor": {
+    "samples": 26,
+    "interval_seconds": 1.0,
+    "average_gpu_util_percent": 7.461538461538462,
+    "peak_vram_mb": 237.0,
+    "average_cpu_percent": 7.642307692307692,
+    "peak_ram_used_gb": 14.425106048583984
+  }
+}

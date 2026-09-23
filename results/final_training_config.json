@@ -1,0 +1,43 @@
+{
+  "seed": 20260923,
+  "device": "cuda",
+  "schedule": [
+    {
+      "iteration": 0,
+      "weight": 0.05,
+      "rollouts": 50
+    },
+    {
+      "iteration": 1,
+      "weight": 0.3,
+      "rollouts": 100
+    },
+    {
+      "iteration": 2,
+      "weight": 0.5,
+      "rollouts": 150
+    },
+    {
+      "iteration": 3,
+      "weight": 0.7,
+      "rollouts": 200
+    },
+    {
+      "iteration": 4,
+      "weight": 0.9,
+      "rollouts": 250
+    }
+  ],
+  "checkpoint_every_batches": 10,
+  "tensorboard_logdir": "runs\\alphazero_full",
+  "production_configuration": {
+    "parallel_workers": 8,
+    "parallel_inference_batch_size": 2,
+    "parallel_min_rollouts": 100,
+    "parallel_pin_memory": true,
+    "float_precision": "float32",
+    "amp": false,
+    "torch_compile": false
+  },
+  "source": "ch21AlphaZeroUnsolvedGames.ipynb"
+}

@@ -1,0 +1,54 @@
+{
+  "created_at": "2026-09-23T09:28:53.020867+07:00",
+  "alpha_zero_checkpoint": "checkpoints\\training\\connzero_final_trained.pt",
+  "alpha_zero_checkpoint_sha256": "ce2755177313ba42b19c1882ec7fb09c135c01eddc3b2bcf8c9975f219aa2daa",
+  "games_per_matchup": 100,
+  "starting_side_allocation": {
+    "alpha_zero_first": 50,
+    "alpha_zero_second": 50
+  },
+  "base_seed": 20260923,
+  "opponents": [
+    "RandomAgent",
+    "RuleBasedThink3Agent",
+    "DepthMinimaxAgent",
+    "AlphaBetaAgent",
+    "PositionEvalAgent",
+    "MCTSAgent",
+    "AlphaGoAgent"
+  ],
+  "alpha_zero": {
+    "weight": 0.75,
+    "rollouts": 584
+  },
+  "depth_minimax_depth": 3,
+  "alpha_beta_depth": 3,
+  "position_eval": {
+    "depth": 3,
+    "checkpoint": "checkpoints\\pretrained\\position_eval.pt"
+  },
+  "mcts": {
+    "rollouts": 100,
+    "exploration_constant": 1.4
+  },
+  "alphago": {
+    "weight": 0.75,
+    "depth": 45,
+    "rollouts": 584,
+    "policy_rollout": false,
+    "policy_checkpoint": "checkpoints\\pretrained\\policy_gradient_conn.pt",
+    "value_checkpoint": "checkpoints\\pretrained\\value_conn.pt",
+    "rollout_policy_checkpoint": "checkpoints\\pretrained\\policy_conn.pt"
+  },
+  "device": "cuda",
+  "validation": {
+    "complete": true,
+    "all_moves_legal": true,
+    "invalid_moves": 0,
+    "games": 700,
+    "allocation_per_matchup": {
+      "first": 50,
+      "second": 50
+    }
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "timestamp": "2026-09-23T07:12:59.338583+07:00",
+  "kind": "post_optimization",
+  "system": {
+    "platform": "Windows-10-10.0.19045-SP0",
+    "logical_cpu_count": 20,
+    "physical_cpu_count": 14,
+    "system_ram_gb": 31.747482299804688,
+    "torch_version": "2.11.0+cu128",
+    "cuda_version": "12.8",
+    "gpu": "NVIDIA GeForce RTX 5060",
+    "torch_num_threads": 14,
+    "torch_num_interop_threads": 14
+  },
+  "workload": {
+    "phase_seconds": 5.0,
+    "mcts_rollouts": 100,
+    "self_play_rollouts": 4,
+    "training_batch_games": 2
+  },
+  "selected_configuration": {
+    "independent_mcts_workers": 16,
+    "network_inference_batch_size": 512,
+    "network_inference_context": "torch.inference_mode",
+    "amp": false,
+    "torch_compile": false,
+    "static_dataloader_workers": 0,
+    "static_dataloader_pin_memory": true,
+    "self_play_under_100_rollouts": "sequential_detached_collection",
+    "self_play_at_least_100_rollouts": {
+      "workers": 8,
+      "inference_batch_size": 2,
+      "single_cuda_service": true,
+      "pin_memory": true
+    },
+    "training_update": "one vectorized FP32 recomputation per source batch"
+  },
+  "mcts": {
+    "elapsed_seconds": 5.02015240000037,
+    "tasks": 2848.0,
+    "rollouts": 284800.0,
+    "rollouts_per_second": 56731.34544679939,
+    "workers": 16.0
+  },
+  "policy_batch_inference": {
+    "elapsed_seconds": 5.040030799995293,
+    "iterations": 12106.0,
+    "positions": 6198272.0,
+    "positions_per_second": 1229808.3575215035,
+    "batch_size": 512.0
+  },
+  "value_batch_inference": {
+    "elapsed_seconds": 5.031415899997228,
+    "iterations": 15958.0,
+    "positions": 8170496.0,
+    "positions_per_second": 1623895.9693243608,
+    "batch_size": 512.0
+  },
+  "self_play": {
+    "elapsed_seconds": 5.0116046000039205,
+    "iterations": 330.0,
+    "games": 330.0,
+    "positions": 2709.0,
+    "completed_games": 330.0,
+    "games_per_second": 65.84717397692185,
+    "positions_per_second": 540.5454372832767
+  },
+  "training": {
+    "elapsed_seconds": 5.042207699996652,
+    "iterations": 142.0,
+    "games": 284.0,
+    "training_steps": 2498.0,
+    "parameter_updates": 142.0,
+    "games_per_second": 56.3245341916773,
+    "training_steps_per_second": 495.41790989721795,
+    "first_loss": -4.414999008178711,
+    "last_loss": 21.399301528930664
+  },
+  "monitor": {
+    "samples": 29,
+    "interval_seconds": 1.0,
+    "average_gpu_util_percent": 34.0,
+    "peak_vram_mb": 223.0,
+    "average_cpu_percent": 27.779310344827586,
+    "peak_ram_used_gb": 16.395538330078125
+  },
+  "before_after": {
+    "mcts_rollouts_per_second": {
+      "before": 7698.98234851709,
+      "after": 56731.34544679939,
+      "speedup": 7.3686810644171015,
+      "percent_change": 636.8681064417101
+    },
+    "policy_positions_per_second_single_to_batch_512": {
+      "before": 2356.2058957615136,
+      "after": 1229808.3575215035,
+      "speedup": 521.9443511849951,
+      "percent_change": 52094.43511849951
+    },
+    "value_positions_per_second_single_to_batch_512": {
+      "before": 2717.2927212810523,
+      "after": 1623895.9693243608,
+      "speedup": 597.6153973425374,
+      "percent_change": 59661.53973425375
+    },
+    "standalone_self_play_games_per_second": {
+      "before": 68.17500567937908,
+      "after": 65.84717397692185,
+      "speedup": 0.9658550567138224,
+      "percent_change": -3.4144943286177565
+    },
+    "training_samples_per_second": {
+      "before": 412.25738920759136,
+      "after": 495.41790989721795,
+      "speedup": 1.2017199033096075,
+      "percent_change": 20.171990330960753
+    }
+  }
+}
